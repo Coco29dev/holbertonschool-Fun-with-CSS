@@ -1,0 +1,55 @@
+/* container pour la liste des icônes */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 50px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+
+/* card individuelle pour chaque icônes */
+li {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 40px 30px;
+    width: 200px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* affichage des icônes depuis le sprite */
+.icon {
+    display: block;
+    width: 160px;
+    height: 190px;
+    background-image: url('0-sprite.png');
+    background-repeat: no-repeat;
+    background-size: 480px 190px;
+}
+
+
+/* icône HTML dans le sprite */
+.i-html {
+    background-position: 0 0;
+}
+
+/* icône CSS dans le sprite */
+.i-css {
+    background-position: -160px 0;
+}
+
+/* icône JS dans le sprite */
+.i-js {
+    background-position: -320px 0;
+}
