@@ -1,55 +1,45 @@
-/* container pour la liste des icônes */
+/* Container pour la liste des technologies */
 ul {
     list-style: none;
     padding: 0;
-    margin: 50px;
+    margin: 0;
     display: flex;
-    gap: 30px;
-    justify-content: center;
+    gap: 40px;
 }
 
-
-/* card individuelle pour chaque icônes */
+/* Carte individuelle pour chaque technologie */
 li {
     background-color: #f7f7f7;
-    border: 1px solid #ddd;
-    border-radius: 15px;
-    padding: 40px 30px;
-    width: 200px;
-    text-align: center;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
     font-family: Arial, sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
-/* affichage des icônes depuis le sprite */
+/* Configuration de base pour l'affichage des icônes depuis le sprite */
 .icon {
-    display: block;
-    width: 160px;
-    height: 190px;
+    display: inline-block;
+    width: 286px;
+    height: 375px;
     background-image: url('0-sprite.png');
     background-repeat: no-repeat;
-    background-size: 480px 190px;
+    background-size: 860px 375px;
 }
 
-
-/* icône HTML dans le sprite */
+/* Position de l'icône HTML5 dans le sprite */
 .i-html {
     background-position: 0 0;
 }
 
-/* icône CSS dans le sprite */
+/* Position de l'icône CSS3 dans le sprite */
 .i-css {
-    background-position: -160px 0;
+    background-position: -287px 0;
 }
 
-/* icône JS dans le sprite */
+/* Position de l'icône JavaScript dans le sprite */
 .i-js {
-    background-position: -320px 0;
+    background-position: -574px 0;
 }
